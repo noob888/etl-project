@@ -35,7 +35,7 @@ Google Sheets: Transformed data is loaded into designated Google Sheets, making 
 
 # 🗺️ **Data Flow Diagram**
 
-```
+```mermaid
 graph TD;
     A[Shopify] --> B[Extract];
     C[Fishbowl] --> B[Extract];
