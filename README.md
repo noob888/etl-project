@@ -12,13 +12,15 @@ An Extract Transform Load (ETL) project to extract data from different sources s
 This project is designed to automate the extraction, transformation, and loading (ETL) of data from multiple sources—namely Shopify and Fishbowl Inventory System—into Google Sheets. The goal is to streamline data integration, improve reporting, and enhance decision-making processes.
 
 # 📂 **Project Structure**
+
+```
 📦etl-project
  ┣ 📜extract.py         # Scripts for extracting data from Shopify and Fishbowl
  ┣ 📜transform.py       # Scripts for transforming data using Pandas
  ┣ 📜load.py            # Scripts for loading data into Google Sheets
  ┣ 📜requirements.txt     # Required Python libraries
  ┗ 📜README.md            # Project documentation
-
+```
  
 # 🔄 ETL Workflow
 1. Extract
@@ -32,12 +34,14 @@ Google Sheets: Transformed data is loaded into designated Google Sheets, making 
 
 
 # 🗺️ **Data Flow Diagram**
+
+```
 graph TD;
     A[Shopify] --> B[Extract];
     C[Fishbowl] --> B[Extract];
     B[Extract] --> D[Transform];
     D[Transform] --> E[Load to Google Sheets];
-
+```
 
    
 🚀 **Getting Started**
@@ -51,19 +55,22 @@ Google Sheets API credentials
 **Installation**
 
 Clone the repository:
+```
 git clone https://github.com/your-username/etl-project.git
 cd etl-project
-
+```
 Install the required libraries:
+```
 pip install -r requirements.txt
-
+```
 Configure API keys in config.py.
 
 Running the ETL Process
+```
 python src/extract.py
 python src/transform.py
 python src/load.py
-
+```
 
 ✨ **Features**
 
